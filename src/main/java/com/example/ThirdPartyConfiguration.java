@@ -44,8 +44,8 @@ public class ThirdPartyConfiguration {
     private final Object value;
 
     public Attribute(String name, Object value) {
-      Objects.requireNonNull(name, "'name' is not null.");
-      Objects.requireNonNull(value, "'value' is not null.");
+      Objects.requireNonNull(name, "'name' must be not null.");
+      Objects.requireNonNull(value, "'value' must be not null.");
       this.name = name;
       this.value = value;
     }
